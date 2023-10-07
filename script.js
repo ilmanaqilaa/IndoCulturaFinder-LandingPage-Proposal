@@ -13,6 +13,10 @@ document.addEventListener("DOMContentLoaded", function () {
                 const { imageURL3, description3, title3 } = pageData.content3;
                 document.querySelector(".container").innerHTML = `
                 <style>
+                    .content {
+                        margin: 0px 10px;
+                    }
+
                     .row {
                         margin-top: 130px;
                         margin-bottom: 200px;
@@ -20,6 +24,10 @@ document.addEventListener("DOMContentLoaded", function () {
                     
                     #image-space {
                         padding: 10px 50px;
+                    }
+
+                    #text-space {
+                        padding: 10px 10px
                     }
 
                     @media screen and (max-width: 760px) {
@@ -33,42 +41,42 @@ document.addEventListener("DOMContentLoaded", function () {
                         }
 
                         #text-space {
-                            margin: 10px 10px;
+                            padding: 10px 20px
                         }
                     }
                 </style>
                 <div class="content">
-                    <div class="row align-items-center shadow rounded">
-                        <div id="image-space"  class="col-md-6">
-                            <img src="${imageURL}" alt="Gambar Perkenalan" class="img-fluid">
+                        <div class="row align-items-center shadow rounded">
+                            <div id="image-space"  class="col-md-6">
+                                <img src="${imageURL}" alt="Gambar Perkenalan" class="img-fluid">
+                            </div>
+                            <div id="text-space" class="col-md-6">
+                                <h1>${pageData.title}</h1>
+                                <p>${description}</p>
+                            </div>
                         </div>
-                        <div id="text-space" class="col-md-6">
-                            <h1>${pageData.title}</h1>
-                            <p>${description}</p>
-                        </div>
-                    </div>
 
-                    <div id="reverse" class="row align-items-center shadow rounded">
-                        <div id="text-space" class="col-md-6">
-                            <h1>${title2}</h1>
-                            <p>${description2}*</p>
-                            <p style="font-size: x-small;">*${pageData.note}</p>
-                        </div>
-                        <div id="image-space" class="col-md-6">
-                            <img src="${imageURL2}" alt="Gambar Perkenalan" class="img-fluid">
-                        </div>
-                    </div>  
+                        <div id="reverse" class="row text align-items-center shadow rounded">
+                            <div id="text-space" class="col-md-6">
+                                <h1>${title2}</h1>
+                                <p>${description2}*</p>
+                                <p style="font-size: x-small;">*${pageData.note}</p>
+                            </div>
+                            <div id="image-space" class="col-md-6">
+                                <img src="${imageURL2}" alt="Gambar Perkenalan" class="img-fluid">
+                            </div>
+                        </div>  
 
-                    <div class="row align-items-center shadow rounded">
-                    <div id="image-space"  class="col-md-6">
-                        <img src="${imageURL3}" alt="Gambar Perkenalan" class="img-fluid">
-                    </div>
-                    <div id="text-space" class="col-md-6">
-                        <h1>${title3}</h1>
-                        <p>${description3}</p>
-                        <p style="font-size: x-small;">*${pageData.note}</p>
-                    </div>
-                </div>
+                        <div class="row align-items-center shadow rounded">
+                            <div id="image-space"  class="col-md-6">
+                                <img src="${imageURL3}" alt="Gambar Perkenalan" class="img-fluid">
+                            </div>
+                            <div id="text-space" class="col-md-6">
+                                <h1>${title3}</h1>
+                                <p>${description3}</p>
+                                <p style="font-size: x-small;">*${pageData.note}</p>
+                            </div>
+                        </div>
                 </div>
                 `;
             } if (pageId === "page2") {
@@ -84,10 +92,6 @@ document.addEventListener("DOMContentLoaded", function () {
                     display: flex;
                     margin: 60px 50px;
                     justify-content: center;
-                }
-                
-                .container.satu {
-                    /* gap: 1rem; */
                 }
                 
                 .atas {
@@ -156,7 +160,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     .container {
                         flex-wrap: wrap;
                     }
-                
+
                     .atas.kiri {
                         order: 2;
                     }
@@ -173,22 +177,22 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
                 </style>
                 <div class="container satu">
-                <article class="atas kiri">
-                  <h1 id="myText">${pageData.title}</h1>
-                  <h2 >Saya ${pageData.name}</h2>
-                  <p>Saya adalah mahasiswa <a href="${pageData.campus}" target="_blank"><span>Universitas Logistik dan Bisnis Internasional</span></a> Bandung</p>
-                </article>
-        
-                <article id="geografis" class="atas kanan">
-                  <img src="${pageData.picture}" alt="">
-                  <div>
-                  <a href="https://github.com/ilmanaqilaa" target="_blank"><i class="fab fa-github"></i></a>
-                  <a href="https://www.facebook.com/profile.php?id=100007457206009" target="_blank"><i class="fab fa-facebook"></i></a>
-                  <a href="https://www.instagram.com/ilmanaqilaa" target="_blank"><i class="fab fa-instagram"></i></a>
-                  <a href="https://id.linkedin.com/in/ilman-aqilaa-0132b9203" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <article class="atas kiri">
+                    <h1 id="myText">${pageData.title}</h1>
+                    <h2 >Saya ${pageData.name}</h2>
+                    <p>Saya adalah mahasiswa <a href="${pageData.campus}" target="_blank"><span>Universitas Logistik dan Bisnis Internasional</span></a> Bandung</p>
+                    </article>
+            
+                    <article id="geografis" class="atas kanan">
+                        <img src="${pageData.picture}" alt="">
+                            <div>
+                                <a href="https://github.com/ilmanaqilaa" target="_blank"><i class="fab fa-github"></i></a>
+                                <a href="https://www.facebook.com/profile.php?id=100007457206009" target="_blank"><i class="fab fa-facebook"></i></a>
+                                <a href="https://www.instagram.com/ilmanaqilaa" target="_blank"><i class="fab fa-instagram"></i></a>
+                                <a href="https://id.linkedin.com/in/ilman-aqilaa-0132b9203" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            </div>
+                    </article>
                 </div>
-                </article>
-              </div>
             `;
             } 
         } catch (error) {
