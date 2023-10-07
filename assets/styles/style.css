@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto Slab',sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    color: black;
+    border-radius: 10px;
+    width: auto;
+    background-color: white;
+    box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.75);
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h2, h3 {
+    color: black;
+}
+
+header {
+    display: inline;
+}
+
+nav {
+    background-color: rgb(172, 172, 172);
+    padding: 5px;
+    position: sticky;
+    top: 0;
+}
+
+nav ul{
+    padding-inline: 4rem;
+    display: flex;
+    gap: 2rem;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+nav a {
+    font-size:  18px;
+    font-weight: 500;
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover {
+    font-weight: bold;
+}
+
+/* Akhir header */
+
+/* Konten */
+aside {
+    flex: 1;
+}
+
+.container {
+    width: auto;
+    display: flex;
+    margin: 120px 50px;
+    justify-content: center;
+}
+
+.container.satu {
+    /* gap: 1rem; */
+    margin-bottom: 200px;
+}
+
+.atas {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.atas.kiri {
+    /* background-color: aquamarine; */
+    text-align: center;
+    margin: auto;
+}
+
+.atas.kiri p {
+    font-size: large;
+    font-weight: 700;
+}
+
+.atas.kiri a {
+    text-decoration: none;
+}
+
+.atas.kiri span {
+    color: black;
+}
+
+.atas.kiri span:hover {
+    color: orange;
+}
+
+.atas.kanan a i {
+    font-size: 400%;
+    margin: 20px 5px;
+    color: black;
+}
+
+.fab.fa-github:hover {
+    color: #2D3E50;
+}
+
+.fab.fa-facebook:hover {
+    color: #3b5998;
+}
+
+.fab.fa-linkedin:hover {
+    color: #0e76a8;
+}
+
+.fab.fa-instagram:hover {
+    color: #C13584;
+}
+
+.atas.kanan {
+    /* background-color: aqua; */
+    text-align: center;
+    flex-grow: 1;
+}
+
+.atas.kanan img {
+    width:300px;
+    border-radius: 100%;
+}
+
+.proyek-kampus {
+    text-align: center;
+}
+
+.proyek-kampus h2 {
+    font-size: 40px;
+}
+
+.proyek-kampus p {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.proyek-kampus img {
+    width: 300px;
+}
+
+.proyek-kampus li {
+    list-style: none;
+    margin: 10px;
+    font-size: 30;
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    color: black;
+    background-color: rgb(172, 172, 172);
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Akhir Footer */
+
+@media screen and (max-width: 760px) {
+    .container {
+        flex-wrap: wrap;
+    }
+
+    .atas.kiri {
+        order: 2;
+    }
+
+    .atas.kanan img {
+        width: 80%;
+    }
+
+    .atas.kanan a i {
+        font-size: 200%;
+        margin: 20px 5px;
+        color: black;
+    }
+
+    .proyek-kampus {
+        margin-bottom: 10px;
+    }
+
+    .proyek-kampus h2 {
+        font-size: 1rem;
+    }
+    
+    .proyek-kampus p {
+        font-size: 1rem;
+        font-weight: 600;
+    }
+    
+    .proyek-kampus img {
+        width: 50%;
+    }
+    
+    .proyek-kampus li {
+        list-style: none;
+        /* margin: 10px 0; */
+        font-size: 1rem;
+    }
+}
