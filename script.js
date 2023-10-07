@@ -162,11 +162,11 @@ document.addEventListener("DOMContentLoaded", function () {
                     }
                 
                     .atas.kanan img {
-                        width: 80%;
+                        width: 100%;
                     }
                 
                     .atas.kanan a i {
-                        font-size: 200%;
+                        font-size: 125%;
                         margin: 20px 5px;
                         color: black;
                     }
