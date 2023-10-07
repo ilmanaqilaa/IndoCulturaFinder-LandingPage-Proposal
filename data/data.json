@@ -1,9 +1,21 @@
 {
   "page1": {
-    "title": "Halaman 1 - Perkenalan",
-    "content": {
+    "title": "ARStore",
+    "content1": {
+      "title":"ARStore",
       "imageURL": "https://www.polygonbikes.com/wp-content/uploads/2021/12/Premier-Five-P-1024x768.png",
-      "description": "Ini adalah halaman perkenalan proposal dengan gambar di sebelah kiri dan keterangan di sebelah kanan."
+      "description": "ARStore merupakan tempat penjualan Asset 3 Dimensi yang dapat digunakan untuk kebutuhan developer, baik digunakan untuk pembuatan game, kebutuhan website, dan lain-lain."
+    },
+    "content2": {
+      "title2":"User",
+      "imageURL2": "https://www.polygonbikes.com/wp-content/uploads/2021/12/Premier-Five-P-1024x768.png",
+      "description2": "Fitur yang tersedia untuk user terdiri dari, menambah beberapa item dalam satu pesanan, hapus item yang sudah ada di dalam pesanan belum dibayar, menambah transaksi baru untuk item yang sudah dipesan.",
+      "note": "Fitur bisa saja berubah sesuai dengan pengembangan"
+    },
+    "content3": {
+      "title2":"ARStore",
+      "imageURL3": "https://www.polygonbikes.com/wp-content/uploads/2021/12/Premier-Five-P-1024x768.png",
+      "description3": "ARStore merupakan tempat penjualan Asset 3 Dimensi yang dapat digunakan untuk kebutuhan developer, baik digunakan untuk pembuatan game, kebutuhan website, dan lain-lain."
     }
   },
   "page2": {

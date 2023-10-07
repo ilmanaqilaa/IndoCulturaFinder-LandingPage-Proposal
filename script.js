@@ -8,10 +8,53 @@ document.addEventListener("DOMContentLoaded", function () {
             const pageData = data[pageId];
 
             if (pageId === "page1") {
-                const { imageURL, description } = pageData.content;
+                const { imageURL, description } = pageData.content1;
+                const { imageURL2, description2, title2, note } = pageData.content2;
+                const { imageURL3, description3 } = pageData.content3;
                 document.querySelector(".container").innerHTML = `
-                <h1>${pageData.title}</h1>
-                <p>${description}</p>
+                <style>
+                    .row {
+                        margin-top: 130px;
+                        margin-bottom: 200px;
+                    }
+
+                    @media screen and (max-width: 760px) {
+                        .row {
+                            margin-top: 90px;
+                            margin-bottom: 150px;
+                        }
+
+                        #reverse {
+                            flex-direction: column-reverse;
+                        }
+
+                        #space {
+                            margin: 10px 10px;
+                        }
+                    }
+                </style>
+                <div class="content">
+                    <div class="row align-items-center shadow">
+                        <div class="col-md-6">
+                            <img src="assets/image/dragon.png" alt="Gambar Perkenalan" class="img-fluid">
+                        </div>
+                        <div id="space" class="col-md-6">
+                            <h1>${pageData.title}</h1>
+                            <p>${description}</p>
+                        </div>
+                    </div>
+
+                    <div id="reverse" class="row align-items-center shadow">
+                        <div id="space" class="col-md-6">
+                            <h1>${title2}</h1>
+                            <p>${description2}*</p>
+                            <p style="font-size: x-small;">*${note}</p>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="assets/image/isometric.png" alt="Gambar Perkenalan" class="img-fluid">
+                        </div>
+                    </div>  
+                </div>
                 `;
             } if (pageId === "page2") {
                 document.querySelector(".container").innerHTML = `
