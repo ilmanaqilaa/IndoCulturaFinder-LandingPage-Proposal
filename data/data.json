@@ -1,6 +1,7 @@
 {
   "page1": {
     "title": "ARStore",
+    "note": "Fitur bisa saja berubah sesuai dengan pengembangan",
     "content1": {
       "title":"ARStore",
       "imageURL": "https://www.polygonbikes.com/wp-content/uploads/2021/12/Premier-Five-P-1024x768.png",
@@ -9,13 +10,12 @@
     "content2": {
       "title2":"User",
       "imageURL2": "https://www.polygonbikes.com/wp-content/uploads/2021/12/Premier-Five-P-1024x768.png",
-      "description2": "Fitur yang tersedia untuk user terdiri dari, menambah beberapa item dalam satu pesanan, hapus item yang sudah ada di dalam pesanan belum dibayar, menambah transaksi baru untuk item yang sudah dipesan.",
-      "note": "Fitur bisa saja berubah sesuai dengan pengembangan"
+      "description2": "Fitur yang tersedia untuk user terdiri dari, menambah beberapa item dalam satu pesanan, hapus item yang sudah ada di dalam pesanan belum dibayar, menambah transaksi baru untuk item yang sudah dipesan."
     },
     "content3": {
-      "title2":"ARStore",
+      "title3":"Admin",
       "imageURL3": "https://www.polygonbikes.com/wp-content/uploads/2021/12/Premier-Five-P-1024x768.png",
-      "description3": "ARStore merupakan tempat penjualan Asset 3 Dimensi yang dapat digunakan untuk kebutuhan developer, baik digunakan untuk pembuatan game, kebutuhan website, dan lain-lain."
+      "description3": "Fitur yang tersedia untuk admin terdiri dari menambah item baru, merubah item, dan menghapus item yang ada pada sistem."
     }
   },
   "page2": {

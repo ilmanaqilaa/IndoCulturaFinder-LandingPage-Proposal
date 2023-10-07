@@ -9,13 +9,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
             if (pageId === "page1") {
                 const { imageURL, description } = pageData.content1;
-                const { imageURL2, description2, title2, note } = pageData.content2;
-                const { imageURL3, description3 } = pageData.content3;
+                const { imageURL2, description2, title2, note2 } = pageData.content2;
+                const { imageURL3, description3, title3, note3 } = pageData.content3;
                 document.querySelector(".container").innerHTML = `
                 <style>
                     .row {
                         margin-top: 130px;
                         margin-bottom: 200px;
+                    }
+                    
+                    #image-space {
+                        padding: 10px 50px;
                     }
 
                     @media screen and (max-width: 760px) {
@@ -28,32 +32,43 @@ document.addEventListener("DOMContentLoaded", function () {
                             flex-direction: column-reverse;
                         }
 
-                        #space {
+                        #text-space {
                             margin: 10px 10px;
                         }
                     }
                 </style>
                 <div class="content">
-                    <div class="row align-items-center shadow">
-                        <div class="col-md-6">
+                    <div class="row align-items-center shadow rounded">
+                        <div id="image-space"  class="col-md-6">
                             <img src="assets/image/dragon.png" alt="Gambar Perkenalan" class="img-fluid">
                         </div>
-                        <div id="space" class="col-md-6">
+                        <div id="text-space" class="col-md-6">
                             <h1>${pageData.title}</h1>
                             <p>${description}</p>
                         </div>
                     </div>
 
                     <div id="reverse" class="row align-items-center shadow">
-                        <div id="space" class="col-md-6">
+                        <div id="text-space" class="col-md-6">
                             <h1>${title2}</h1>
                             <p>${description2}*</p>
-                            <p style="font-size: x-small;">*${note}</p>
+                            <p style="font-size: x-small;">*${pageData.note}</p>
                         </div>
-                        <div class="col-md-6">
+                        <div id="image-space" class="col-md-6">
                             <img src="assets/image/isometric.png" alt="Gambar Perkenalan" class="img-fluid">
                         </div>
                     </div>  
+
+                    <div class="row align-items-center shadow rounded">
+                    <div id="image-space"  class="col-md-6">
+                        <img src="assets/image/house.png" alt="Gambar Perkenalan" class="img-fluid">
+                    </div>
+                    <div id="text-space" class="col-md-6">
+                        <h1>${title3}</h1>
+                        <p>${description3}</p>
+                        <p style="font-size: x-small;">*${pageData.note}</p>
+                    </div>
+                </div>
                 </div>
                 `;
             } if (pageId === "page2") {
