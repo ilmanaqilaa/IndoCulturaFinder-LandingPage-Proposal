@@ -9,8 +9,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
             if (pageId === "page1") {
                 const { imageURL, description } = pageData.content1;
-                const { imageURL2, description2, title2, note2 } = pageData.content2;
-                const { imageURL3, description3, title3, note3 } = pageData.content3;
+                const { imageURL2, description2, title2 } = pageData.content2;
+                const { imageURL3, description3, title3 } = pageData.content3;
                 document.querySelector(".container").innerHTML = `
                 <style>
                     .row {
@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 <div class="content">
                     <div class="row align-items-center shadow rounded">
                         <div id="image-space"  class="col-md-6">
-                            <img src="assets/image/dragon.png" alt="Gambar Perkenalan" class="img-fluid">
+                            <img src="${imageURL}" alt="Gambar Perkenalan" class="img-fluid">
                         </div>
                         <div id="text-space" class="col-md-6">
                             <h1>${pageData.title}</h1>
@@ -48,20 +48,20 @@ document.addEventListener("DOMContentLoaded", function () {
                         </div>
                     </div>
 
-                    <div id="reverse" class="row align-items-center shadow">
+                    <div id="reverse" class="row align-items-center shadow rounded">
                         <div id="text-space" class="col-md-6">
                             <h1>${title2}</h1>
                             <p>${description2}*</p>
                             <p style="font-size: x-small;">*${pageData.note}</p>
                         </div>
                         <div id="image-space" class="col-md-6">
-                            <img src="assets/image/isometric.png" alt="Gambar Perkenalan" class="img-fluid">
+                            <img src="${imageURL2}" alt="Gambar Perkenalan" class="img-fluid">
                         </div>
                     </div>  
 
                     <div class="row align-items-center shadow rounded">
                     <div id="image-space"  class="col-md-6">
-                        <img src="assets/image/house.png" alt="Gambar Perkenalan" class="img-fluid">
+                        <img src="${imageURL3}" alt="Gambar Perkenalan" class="img-fluid">
                     </div>
                     <div id="text-space" class="col-md-6">
                         <h1>${title3}</h1>
@@ -76,11 +76,6 @@ document.addEventListener("DOMContentLoaded", function () {
                     <h1>${pageData.title}</h1>
                     <p>${pageData.content}</p>
                 `;
-            } if (pageId === "page3") {
-                document.querySelector(".container").innerHTML = `
-                <h1>${pageData.title}</h1>
-                <p>${pageData.content}</p>
-            `;
             } if (pageId === "page4") {
                 document.querySelector(".container").innerHTML = `
                 <style>
