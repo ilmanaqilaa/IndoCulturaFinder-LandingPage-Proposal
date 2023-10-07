@@ -10,6 +10,21 @@ document.addEventListener("DOMContentLoaded", function () {
             if (pageId === "page1") {
                 const { imageURL, description } = pageData.content;
                 document.querySelector(".container").innerHTML = `
+                <h1>${pageData.title}</h1>
+                <p>${description}</p>
+                `;
+            } if (pageId === "page2") {
+                document.querySelector(".container").innerHTML = `
+                    <h1>${pageData.title}</h1>
+                    <p>${pageData.content}</p>
+                `;
+            } if (pageId === "page3") {
+                document.querySelector(".container").innerHTML = `
+                <h1>${pageData.title}</h1>
+                <p>${pageData.content}</p>
+            `;
+            } if (pageId === "page4") {
+                document.querySelector(".container").innerHTML = `
                 <style>
                 .container {
                     width: auto;
@@ -84,6 +99,26 @@ document.addEventListener("DOMContentLoaded", function () {
                     width:300px;
                     border-radius: 100%;
                 }
+
+                @media screen and (max-width: 760px) {
+                    .container {
+                        flex-wrap: wrap;
+                    }
+                
+                    .atas.kiri {
+                        order: 2;
+                    }
+                
+                    .atas.kanan img {
+                        width: 80%;
+                    }
+                
+                    .atas.kanan a i {
+                        font-size: 200%;
+                        margin: 20px 5px;
+                        color: black;
+                    }
+                }
                 </style>
                 <div class="container satu">
                 <article class="atas kiri">
@@ -94,20 +129,16 @@ document.addEventListener("DOMContentLoaded", function () {
         
                 <article id="geografis" class="atas kanan">
                   <img src="assets/image/ilman.jpg" alt="">
+                  <div>
+                  <a href="https://github.com/ilmanaqilaa" target="_blank"><i class="fab fa-github"></i></a>
+                  <a href="https://www.facebook.com/profile.php?id=100007457206009" target="_blank"><i class="fab fa-facebook"></i></a>
+                  <a href="https://www.instagram.com/ilmanaqilaa" target="_blank"><i class="fab fa-instagram"></i></a>
+                  <a href="https://id.linkedin.com/in/ilman-aqilaa-0132b9203" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </div>
                 </article>
               </div>
-                `;
-            } if (pageId === "page2") {
-                document.querySelector(".container").innerHTML = `
-                    <h1>${pageData.title}</h1>
-                    <p>${pageData.content}</p>
-                `;
-            } if (pageId === "page3") {
-                document.querySelector(".container").innerHTML = `
-                <h1>${pageData.title}</h1>
-                <p>${pageData.content}</p>
             `;
-            }
+            } 
         } catch (error) {
             console.error(error);
         }

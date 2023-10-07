@@ -3,7 +3,7 @@
     "title": "Halaman 1 - Perkenalan",
     "content": {
       "imageURL": "https://www.polygonbikes.com/wp-content/uploads/2021/12/Premier-Five-P-1024x768.png",
-      "description": "Ini adalah halaman perkenalan dengan gambar di sebelah kiri dan keterangan di sebelah kanan."
+      "description": "Ini adalah halaman perkenalan proposal dengan gambar di sebelah kiri dan keterangan di sebelah kanan."
     }
   },
   "page2": {
@@ -13,5 +13,12 @@
   "page3": {
     "title": "Halaman 3",
     "content": "Ini adalah halaman ketiga dengan fitur-fitur aplikasi."
+  },
+  "page4": {
+    "title": "Halo!",
+    "name": "Muhammad Ilman Aqilaa",
+    "content": "Ini adalah halaman ketiga dengan fitur-fitur aplikasi.",
+    "desc": "Saya adalah mahasiswa Universitas Logistik dan Bisnis Internasional Bandung",
+    "campus": "https://www.ulbi.ac.id/"
   }
 }
