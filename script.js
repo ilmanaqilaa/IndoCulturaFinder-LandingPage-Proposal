@@ -29,13 +29,12 @@ document.addEventListener("DOMContentLoaded", function () {
                 .container {
                     width: auto;
                     display: flex;
-                    margin: 120px 50px;
+                    margin: 60px 50px;
                     justify-content: center;
                 }
                 
                 .container.satu {
                     /* gap: 1rem; */
-                    margin-bottom: 200px;
                 }
                 
                 .atas {
@@ -122,13 +121,13 @@ document.addEventListener("DOMContentLoaded", function () {
                 </style>
                 <div class="container satu">
                 <article class="atas kiri">
-                  <h1 id="myText">Halo!</h1>
-                  <h2 >Saya Muhammad Ilman Aqilaa</h2>
-                  <p>Saya adalah mahasiswa <a href="https://www.ulbi.ac.id/" target="_blank"><span>Universitas Logistik dan Bisnis Internasional</span></a> Bandung</p>
+                  <h1 id="myText">${pageData.title}</h1>
+                  <h2 >Saya ${pageData.name}</h2>
+                  <p>Saya adalah mahasiswa <a href="${pageData.campus}" target="_blank"><span>Universitas Logistik dan Bisnis Internasional</span></a> Bandung</p>
                 </article>
         
                 <article id="geografis" class="atas kanan">
-                  <img src="assets/image/ilman.jpg" alt="">
+                  <img src="${pageData.picture}" alt="">
                   <div>
                   <a href="https://github.com/ilmanaqilaa" target="_blank"><i class="fab fa-github"></i></a>
                   <a href="https://www.facebook.com/profile.php?id=100007457206009" target="_blank"><i class="fab fa-facebook"></i></a>
