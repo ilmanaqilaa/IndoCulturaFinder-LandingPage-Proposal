@@ -179,7 +179,9 @@ document.addEventListener("DOMContentLoaded", function () {
                 <div class="container satu">
                     <article class="atas kiri">
                     <h1 id="myText">${pageData.title}</h1>
-                    <h2 >Saya ${pageData.name}</h2>
+                    <h3 >Saya ${pageData.name}</h3><br>
+                    <p>NPM saya ${pageData.nim}</p>
+                    <p>${pageData.prodi}</p>
                     <p>Saya adalah mahasiswa <a href="${pageData.campus}" target="_blank"><span>Universitas Logistik dan Bisnis Internasional</span></a> Bandung</p>
                     </article>
             
