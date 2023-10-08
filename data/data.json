@@ -19,12 +19,24 @@
     }
   },
   "page2": {
-    "title": "Halaman 2",
-    "content": "Ini adalah halaman kedua dengan perkenalan aplikasi."
-  },
-  "page3": {
-    "title": "Halaman 3",
-    "content": "Ini adalah halaman ketiga dengan fitur-fitur aplikasi."
+    "title": "Test",
+    "content1": {
+      "title":"Tujuan Proposal",
+      "imageURL": "https://raw.githubusercontent.com/ARStores/ARStore/main/assets/image/dragon.png",
+      "deskripsi": "Ditujukan sebagai salah satu syarat",
+      "deskripsii": "Untuk memperoleh nilai pada kegiatan",
+      "deskripsiii": "Proyek III Program Studi DIV Teknik Informatika"
+    },
+    "content2": {
+      "title2":"PENGEMBANGAN APLIKASI TOKO ONLINE PENJUALAN OBJEK AUGMENTED REALITY BERBASIS WEB DENGAN MENERAPKAN RESTFUL API",
+      "imageURL2": "https://raw.githubusercontent.com/ARStores/ARStore/main/assets/image/isometric.png",
+      "deskripsi2": "Penelitian ini bertujuan untuk mengembangkan ARStore, yang menjual asset Augmented Reality (AR) dengan sistem toko online. Dengan toko online, pelanggan dapat berbelanja secara praktis, sementara pemilik bisnis dapat mengembangkan sistem penjualan dan pelacakan transaksi. Aplikasi ARStore yang sudah dibangun akan dikembangkan dengan menerapkan RESTFUL API, menggunakan PHP sebagai bahasa pemrograman. Penelitian ini berfokus pada pengembangan antarmuka pengguna dan fitur-fitur transaksi yang memudahkan pelanggan. Hasilnya diharapkan membantu AR-Store dalam meningkatkan pelayanan pelanggan dan memperluas pangsa pasar mereka secara online."
+    },
+    "content3": {
+      "title3":"Admin",
+      "imageURL3": "https://raw.githubusercontent.com/ARStores/ARStore/main/assets/image/house.png",
+      "deskripsi3": "Fitur yang tersedia untuk admin terdiri dari menambah item baru, merubah item, dan menghapus item yang ada pada sistem."
+    }
   },
   "page4": {
     "title": "Halo!",

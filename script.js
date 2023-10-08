@@ -80,9 +80,91 @@ document.addEventListener("DOMContentLoaded", function () {
                 </div>
                 `;
             } if (pageId === "page2") {
+                const { imageURL, deskripsi, deskripsii, deskripsiii, title } = pageData.content1;
+                const { imageURL2, deskripsi2, title2 } = pageData.content2;
+                const { imageURL3, deskripsi3, title3 } = pageData.content3;
                 document.querySelector(".container").innerHTML = `
-                    <h1>${pageData.title}</h1>
-                    <p>${pageData.content}</p>
+                <style>
+                    .content {
+                        margin: 0px 200px;
+                    }
+
+                    h2{
+                        text-align: center; 
+                    }
+
+                    P {
+                        text-align: justify;
+                    }
+
+                    img {
+                        margin: 50px auto; /* Menggunakan 'auto' untuk memposisikan gambar di tengah secara horizontal */
+                        display: block; /* Untuk menghilangkan margin tambahan yang mungkin muncul */
+                        width: 50%;
+                    }
+
+                    .row {
+                        margin-top: 130px;
+                        margin-bottom: 200px;
+                    }
+
+                    .tujuan-center p{
+                        text-align: center; 
+                    }
+
+                    #text-space {
+                        padding: 20px 100px
+                    }
+
+
+                    @media screen and (max-width: 760px) {
+                        .content {
+                            margin: 0px 10px;
+                        }
+
+                        .row {
+                            margin-top: 90px;
+                            margin-bottom: 150px;
+                        }
+
+                        #text-space {
+                            padding: 20px 20px
+                        }
+
+                        h2{
+                            font-size: medium;
+                        }
+                    }
+                </style>
+                <div class="content">
+                        <div class="row align-items-center shadow rounded">
+                            <div class="p-4">
+                                    <h2>${title}</h2>
+                                    <img src="assets/image/ulbi.png" alt="Gambar Perkenalan" class="img-fluid">
+                                    <div class="tujuan-center">
+                                        <p>${deskripsi}</p>
+                                        <p>${deskripsii}</p>
+                                        <p>${deskripsiii}</p>
+                                    </div>
+                            </div>
+                        </div>
+
+                        <div class="row text align-items-center shadow rounded">
+                            <div class="p-4">
+                                    <h2>${title2}</h2>
+                                    <hr>
+                                    <p>${deskripsi2}</p>
+                            </div>
+                        </div>  
+
+                        <div class="row align-items-center shadow rounded">
+                            <div class="p-4">
+                                    <h2>${title3}</h2>
+                                    <hr>
+                                    <p>${deskripsi3}</p>
+                            </div>
+                        </div>
+                </div>
                 `;
             } if (pageId === "page4") {
                 document.querySelector(".container").innerHTML = `
@@ -181,8 +263,8 @@ document.addEventListener("DOMContentLoaded", function () {
                     <h1 id="myText">${pageData.title}</h1>
                     <h3 >Saya ${pageData.name}</h3><br>
                     <p>NPM saya ${pageData.nim}</p>
-                    <p>${pageData.prodi}</p>
                     <p>Saya adalah mahasiswa <a href="${pageData.campus}" target="_blank"><span>Universitas Logistik dan Bisnis Internasional</span></a> Bandung</p>
+                    <p>${pageData.prodi}</p>
                     </article>
             
                     <article id="geografis" class="atas kanan">
