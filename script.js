@@ -93,10 +93,10 @@ document.addEventListener("DOMContentLoaded", function () {
                 </div>
                 `;
             } if (pageId === "page2") {
-                const { imageURL, deskripsi, deskripsii, deskripsiii, title } = pageData.content1;
-                const { imageURL2, deskripsi2, title2 } = pageData.content2;
-                const { imageURL3, problem, title3 } = pageData.content3;
-                const { imageURL4, solving, title4 } = pageData.content4;
+                const { deskripsi, deskripsii, deskripsiii, title } = pageData.content1;
+                const { deskripsi2, title2 } = pageData.content2;
+                const { problem, title3 } = pageData.content3;
+                const { solving, title4 } = pageData.content4;
                 document.querySelector(".container").innerHTML = `
                 <style>
                 .container {

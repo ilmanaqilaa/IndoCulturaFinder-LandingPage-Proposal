@@ -22,24 +22,20 @@
     "title": "Test",
     "content1": {
       "title":"Tujuan Proposal",
-      "imageURL": "https://raw.githubusercontent.com/ARStores/ARStore/main/assets/image/dragon.png",
       "deskripsi": "Ditujukan sebagai salah satu syarat",
       "deskripsii": "Untuk memperoleh nilai pada kegiatan",
       "deskripsiii": "Proyek III Program Studi D-IV Teknik Informatika"
     },
     "content2": {
       "title2":"PENGEMBANGAN APLIKASI TOKO ONLINE PENJUALAN OBJEK AUGMENTED REALITY BERBASIS WEB DENGAN MENERAPKAN RESTFUL API",
-      "imageURL2": "https://raw.githubusercontent.com/ARStores/ARStore/main/assets/image/isometric.png",
       "deskripsi2": "Penelitian ini bertujuan untuk mengembangkan ARStore, yang menjual asset Augmented Reality (AR) dengan sistem toko online. Dengan toko online, pelanggan dapat berbelanja secara praktis, sementara pemilik bisnis dapat mengembangkan sistem penjualan dan pelacakan transaksi. Aplikasi ARStore yang sudah dibangun akan dikembangkan dengan menerapkan RESTFUL API, menggunakan PHP sebagai bahasa pemrograman. Penelitian ini berfokus pada pengembangan antarmuka pengguna dan fitur-fitur transaksi yang memudahkan pelanggan. Hasilnya diharapkan membantu AR-Store dalam meningkatkan pelayanan pelanggan dan memperluas pangsa pasar mereka secara online."
     },
     "content3": {
       "title3":"Permasalahan",
-      "imageURL3": "https://raw.githubusercontent.com/ARStores/ARStore/main/assets/image/house.png",
       "problem": "ARStore sebelumnya sudah dibangun dengan berbasis web menggunakan framework Laravel dan juga MYSQL sebagai penyimpanan data atau databasenya dan sistem yang digunakan masih menerapkan monolitik yang dimana proyek pembangunan sistem antara front-end dan back-end berada di dalam satu file yang sama atau proyek yang sama sehingga belum menerapkan RESTFUL API."
     },
     "content4": {
       "title4":"Tujuan",
-      "imageURL3": "https://raw.githubusercontent.com/ARStores/ARStore/main/assets/image/house.png",
       "solving": "Aplikasi ARStore akan dilakukan pengembangan dengan menerapkan sistem microservice yaitu pemisahan sistem menjadi beberapa bagian seperti memisahkan antara tampilan yaitu front-end dan juga back-end dengan menerapkan RESTFUL API yaitu arsitektur dalam pembangunan aplikasi web untuk memfasilitasi komunikasi dan pertukaran data secara efisien di antara sistem-sistem yang berbeda."
     }
   },
