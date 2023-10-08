@@ -82,7 +82,8 @@ document.addEventListener("DOMContentLoaded", function () {
             } if (pageId === "page2") {
                 const { imageURL, deskripsi, deskripsii, deskripsiii, title } = pageData.content1;
                 const { imageURL2, deskripsi2, title2 } = pageData.content2;
-                const { imageURL3, deskripsi3, title3 } = pageData.content3;
+                const { imageURL3, problem, title3 } = pageData.content3;
+                const { imageURL4, solving, title4 } = pageData.content4;
                 document.querySelector(".container").innerHTML = `
                 <style>
                     .content {
@@ -95,6 +96,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
                     P {
                         text-align: justify;
+                    }
+
+                    i {
+                        font-size: 50px;
+
                     }
 
                     img {
@@ -116,6 +122,9 @@ document.addEventListener("DOMContentLoaded", function () {
                         padding: 20px 100px
                     }
 
+                    #img-size {
+                        width: 10%;
+                    }
 
                     @media screen and (max-width: 760px) {
                         .content {
@@ -153,17 +162,26 @@ document.addEventListener("DOMContentLoaded", function () {
                             <div class="p-4">
                                     <h2>${title2}</h2>
                                     <hr>
+                                    <img id="img-size" src="assets/image/store-solid.svg" alt="Gambar Perkenalan" class="img-fluid">
                                     <p>${deskripsi2}</p>
                             </div>
                         </div>  
 
                         <div class="row align-items-center shadow rounded">
-                            <div class="p-4">
+                            <div  class="p-4">
                                     <h2>${title3}</h2>
                                     <hr>
-                                    <p>${deskripsi3}</p>
+                                    <p>${problem}</p>
                             </div>
                         </div>
+
+                        <div class="row align-items-center shadow rounded">
+                        <div class="p-4">
+                                <h2>${title4}</h2>
+                                <hr>
+                                <p>${solving}</p>
+                        </div>
+                    </div>
                 </div>
                 `;
             } if (pageId === "page4") {
