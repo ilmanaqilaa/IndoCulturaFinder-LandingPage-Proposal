@@ -13,6 +13,19 @@ document.addEventListener("DOMContentLoaded", function () {
                 const { imageURL3, description3, title3 } = pageData.content3;
                 document.querySelector(".container").innerHTML = `
                 <style>
+                .container {
+                    opacity: 0;
+                
+                    /* Add animation properties */
+                    animation: fadeIn 2s ease forwards; /* Menggunakan animation-fill-mode: forwards; */
+                }
+                
+                @keyframes fadeIn {
+                    to {
+                        opacity: 1;
+                    }
+                }
+
                     .content {
                         margin: 0px 10px;
                     }
@@ -86,6 +99,20 @@ document.addEventListener("DOMContentLoaded", function () {
                 const { imageURL4, solving, title4 } = pageData.content4;
                 document.querySelector(".container").innerHTML = `
                 <style>
+                .container {
+                    opacity: 0;
+                
+                    /* Add animation properties */
+                    animation: fadeIn 2s ease forwards; /* Menggunakan animation-fill-mode: forwards; */
+                }
+                
+                @keyframes fadeIn {
+                    to {
+                        opacity: 1;
+                    }
+                }
+
+
                     .content {
                         margin: 0px 200px;
                     }
@@ -194,6 +221,20 @@ document.addEventListener("DOMContentLoaded", function () {
                     justify-content: center;
                 }
                 
+                .container.satu {
+                    opacity: 0;
+                
+                    /* Add animation properties */
+                    animation: fadeIn 2s ease forwards; /* Menggunakan animation-fill-mode: forwards; */
+                }
+                
+                @keyframes fadeIn {
+                    to {
+                        opacity: 1;
+                    }
+                }
+                
+
                 .atas {
                     width: 100%;
                     padding: 20px;
@@ -255,6 +296,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     width:300px;
                     border-radius: 100%;
                 }
+
 
                 @media screen and (max-width: 760px) {
                     .container {
